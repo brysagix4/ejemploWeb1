@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #002c5f; /* Color de fondo del encabezado */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.top-section {
+    background-color: #d9d9d9; /* Color de la sección superior */
+}
+
+.middle-section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 200px;
+    margin-bottom: -50px; /* Ajusta este valor para eliminar espacio entre secciones */
+}
+
+.floating-content {
+    background-color: #f0f0f0; /* Color del contenido flotante */
+    padding: 20px;
+    position: relative;
+    top: -60px; /* Ajusta este valor para mover más arriba el texto flotante */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ajusta el ancho para dispositivos móviles */
+    max-width: 600px; /* Establece un ancho máximo para pantallas grandes */
+}
+
+.bottom-section {
+    background-color: #d9d9d9; /* Color de la sección inferior */
+    margin-top: -70px; /* Elimina el espacio entre el contenido flotante y la sección inferior */
+    padding-top: 70px; /* Compensa la eliminación de margen para mantener el contenido visible */
+}
+
+.info p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    .floating-content {
+        width: 100%;
+        top: -50px; /* Ajusta este valor para pantallas pequeñas */
+    }
+
+    .middle-section {
+        margin-bottom: -30px; /* Ajusta este valor para pantallas pequeñas */
+    }
+
+    .bottom-section {
+        margin-top: -50px; /* Ajusta este valor para pantallas pequeñas */
+        padding-top: 50px; /* Compensa la eliminación de margen para pantallas pequeñas */
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    .floating-content {
+        padding: 15px;
+        top: -40px; /* Ajusta este valor para pantallas muy pequeñas */
+    }
+
+    .middle-section {
+        margin-bottom: -20px; /* Ajusta este valor para pantallas muy pequeñas */
+    }
+
+    .bottom-section {
+        margin-top: -30px; /* Ajusta este valor para pantallas muy pequeñas */
+        padding-top: 30px; /* Compensa la eliminación de margen para pantallas muy pequeñas */
+    }
+}
